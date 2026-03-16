@@ -115,6 +115,48 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
+  // --- Форма обратной связи (Ajax) ---
+if (feedbackForm) {
+  feedbackForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (isHoneypotFilled(feedbackForm)) return;
+    var submitBtn = feedbackForm.querySelector('button[type="submit"]');
+    feedbackForm.classList.add('is-loading');
+    if (submitBtn) submitBtn.disabled = true;
+
+    var formData = new FormData(feedbackForm);
+    var data = {};
+    formData.forEach(function (v, k) {
+      if (k !== 'website') data[k] = v;
+    });
+
+    function showSuccess() {
+      feedbackForm.classList.remove('is-loading');
+      if (submitBtn) submitBtn.disabled = false;
+      feedbackForm.hidden = true;
+      if (feedbackSuccess) feedbackSuccess.hidden = false;
+    }
+
+    if (FEEDBACK_URL) {
+      fetch(FEEDBACK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest' },
+        body: JSON.stringify(data)
+      })
+        .then(function (res) {
+          if (res.ok) showSuccess();
+          else throw new Error('Ошибка отправки');
+        })
+        .catch(function () {
+          feedbackForm.classList.remove('is-loading');
+          if (submitBtn) submitBtn.disabled = false;
+          alert('Не удалось отправить сообщение. Попробуйте позже или позвоните нам.');
+        });
+    } else {
+      setTimeout(showSuccess, 500);
+    }
+  });
+}
   /* ---------------- БУРГЕР МЕНЮ ---------------- */
 
 
