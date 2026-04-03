@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="assets/images/Capital_Dent_logo.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/libs/reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/libs/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>CapitalDent - О нас</title>
+</head>
+
+<main class="main">
+<body>
+  <!-- Header: фиксированный, бургер на мобильных -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo" aria-label="Capital Dent — на главную">
+        <img src="img/Capital_Dent_logo.png" alt="Capital Dent" width="48" height="48">
+        <div class="header__logo-text">
+          <span class="header__logo-title">CAPITAL DENT</span>
+        </div>
+      </a>
+      <nav class="header__nav" aria-label="Основное меню">
+        <a href="about.html">О нас</a>
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#specialists">Врачи</a>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <button type="button" class="header__cta btn btn--primary" data-open-modal="booking" aria-label="Записаться на приём">
+        Записаться
+      </button>
+      <button type="button" class="header__burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="header__mobile" id="mobileMenu" aria-hidden="true">
+      <nav class="header__mobile-nav">
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#specialists">Врачи</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button type="button" class="header__cta btn btn--primary" data-open-modal="booking">Записаться</button>
+    </div>
+  </header>
+<!-- 
+  <main class="main"> -->
+
+<div class="page page-about">
+      <!-- Hero как в макете: слева фото, справа белый блок с текстом -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+    <div class="hero__image">
+      <img src="img/hero-slide1.jpg" alt="Современная стоматология">
+    </div>
+    <div class="hero__panel">
+      <h1 class="about-hero__title">
+        Стоматология Capital Dent
+      </h1>
+      <p class="hero__text">
+        Боремся за сохранение зубов вместо удаления и профессионально спасаем вашу улыбку!
+      </p>
+      <div class="matryce">
+        <div class="matryc">
+          <i class="fa-solid fa-shield" style="color: rgb(51, 51, 51);" id="matryc-icon">
+            <i class="fa-solid fa-check" style="color: rgb(255, 255, 255);" id="matryc-i-1"></i>
+          </i>
+          <strong><p>гарантия на лечение Х лет</p></strong>
+        </div>
+        <div class="matryc">
+          <i class="fa-solid fa-microscope" style="color: #333333;" id="matryc-icon"></i>
+          <strong><p>терапия под микроскопом</p></strong>
+        </div>
+        <div class="matryc">
+          <i class="fa-regular fa-clipboard" style="color: rgb(51, 51, 51);" id="matryc-icon">
+            <i class="fa-solid fa-list-check" style="color: rgb(51, 51, 51);" id="matryc-i-2"></i>
+          </i>
+          <strong><p>прозрачный план лечения</p></strong>
+        </div>
+      </div>
+        <p class="hero_text">
+          Если ваш случай кажется сложным – приходите за вторым мнением:
+          сохраняем зуб и его ткани, если это возможно
+          делаем лечение предсказуемым и контролируемым
+          сводим вмешательство к разумному минимуму
+        </p>
+      <button type="button" class="button__cta btn--primary" data-open-modal="booking">Записаться на консультацию</button>
+      <p class="short-text">
+        Разберём ваш случай по снимкам и составим план лечения
+      </p>
+    </div>
+  </div>
+</section>
+
+  <section class="equipment mb py">
+    <div class="container">
+      <div class="equipment__inner">
+        <h2 class="equipment__title">Наше оборудование</h2>
+        <div class="equipment__gallery gallery">
+          <article class="gallery_card">
+            <div class="gallery__pic pic">
+              <img class="gallery__img cover" src="assets/images/equipment-1.jpg" alt="">
+            </div>
+            <h3 class="gallery_text">Lorem, ipsum dolor.</h3>
+          </article>
+
+          <article class="gallery_card">
+            <div class="gallery__pic pic">
+              <img class="gallery__img cover" src="assets/images/equipment-2.jpg" alt="">
+            </div>
+            <h3 class="gallery_text">Lorem, ipsum dolor.</h3>
+          </article>
+
+          <article class="gallery_card">
+            <div class="gallery__pic pic">
+              <img class="gallery__img cover" src="assets/images/equipment-3.jpg" alt="">
+            </div>
+            <h3 class="gallery_text">Lorem, ipsum dolor.</h3>
+          </article>
+
+          <article class="gallery_card">
+            <div class="gallery__pic pic">
+              <img class="gallery__img cover" src="assets/images/equipment-4.jpg" alt="">
+            </div>
+            <h3 class="gallery_text">Lorem, ipsum dolor.</h3>
+          </article>
+
+          <article class="gallery_card">
+            <div class="gallery__pic pic">
+              <img class="gallery__img cover" src="assets/images/equipment-5.jpg" alt="">
+            </div>
+            <h3 class="gallery_text">Lorem, ipsum dolor.</h3>
+          </article>
+
+          <article class="gallery_card">
+            <div class="gallery__pic pic">
+              <img class="gallery__img cover" src="assets/images/equipment-6.jpg" alt="">
+            </div>
+            <h3 class="gallery_text">Lorem, ipsum dolor.</h3>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan">
+    <div class="container">
+        <div class="plan__inner">
+          <h2 class="plan__title">Всегда ищем решение!</h2>
+          <p class="plan_under_title">Принципы <strong>Capital Dent</strong>, которые ориентрированы на пациентов:</p>
+          <div class="shield">
+            <div class="shield-img">
+              <img src="assets/images/tooth-icon.png">
+            </div>
+            <svg width="300" height="300" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" class="shield-border">
+            <path
+              d="M320 90
+                C330 90 350 95 370 105
+                L520 170
+                C540 180 555 200 555 225
+                C555 310 510 470 345 550
+                C330 558 310 558 295 550
+                C130 470 85 310 85 225
+                C85 200 100 180 120 170
+                L270 105
+                C290 95 310 90 320 90
+                Z"
+              stroke="#e2e3e7"
+              stroke-width="5"
+              fill="none"
+              stroke-linejoin="round"
+            />
+            <!-- ТЕКСТ ВНУТРИ ЩИТА -->
+            <text x="320" y="360" text-anchor="middle" fill="#000" class="shield-1-text">
+              Сохранение зуба
+            </text>
+
+            <text x="320" y="410" text-anchor="middle" fill="#000" class="shield-2-text">
+              как приоритет
+            </text>
+            </svg>
+          </div>
+          <div class="left-side">
+            <div class="left-1">
+              <img src="assets/images/иконка диагностики.png">
+              <p><strong>Диагностика</strong></p>
+              <p>диагноз → план лечения</p>
+            </div>
+            <div class="left-2">
+              <img src="assets/images/иконка шприца.png">
+              <p><strong>Бережное обезболивание</strong></p>
+              <p>и работа в вашем темпе</p>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="right-1">
+              <img src="assets/images/Иконка_выбора_плана.png">
+              <p><strong>Выбор плана</strong>
+              </p>вместе с пациентом<p></p>
+            </div>
+            <div class="right-2">
+              <img src="assets/images/quality-control-icon.png">
+              <p><strong>Контроль качества</strong></p>
+              <p>на всех этапах через фото/рентген</p>
+            </div>
+            <div class="right-3">
+              <img src="assets/images/иконка предоплаты.png">
+              <p><strong>Предоплат нет</strong></p>
+              <p> – оплата по факту лечения.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="natalia py bg-light" id="natalia py bg-light">
+    <div class="container hero__inner">
+      <div class="hero__image">
+        <img src="assets/images/Наталья Викторовна.jpg" alt="Современная стоматология">
+      </div>
+      <div class="hero__panel">
+        <h1 class="about-hero__title">
+          Главный врач Capital Dent
+        </h1>
+        <p class="natalia__text">
+          <strong>-Наталья Викторовна, когда вы говорите “боремся за зуб”, что это значит?</strong><br><br>
+          -После диагностики мы видим все проблемы зуба, с которыми пришел пациент.
+          Шаг за шагом устраняем причины: кариес, отломки, непролеченные каналы, инфекции.
+          Восстанавливаем сколы вкладками и коронками.<br>
+          Используем современные методы лечения и новейшее оборудование, чтобы спасти зуб и сохранить человеку и функцию, и эстетику.<br><br>
+          <strong>-Как сам пациент понимает, что лечение было качественным?</strong><br><br>
+          -Во время лечения информируем пациента о  ходе процесса и текущих проблемах. 
+          В результате лечения боль исчезает, подвижность снижается, зуб перестает разрушаться.
+          Пациент не только видит разницу до/после на снимках и в зеркале, но и чувствует комфорт в полости рта.
+        </p>
+    </div>
+  </section>
+
+  <section class="stages">
+    <div class="container">
+      <h2 class="stages__title">Как проходит консультация</h2>
+      <div class="circles">
+        <div class="circle">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+      </div>
+      <div class="stages-text">
+        <div class="stage-text">
+          <p>Проводим первичный осмотр</p>
+        </div>
+        <div class="stage-text">
+          <p>Делаем снимки  и фотографии </p>
+        </div>
+        <div class="stage-text">
+          <p>Показываем и объясняем текущую ситуацию</p>
+        </div>
+        <div class="stage-text">
+          <p>Составляем план лечения и обсуждаем возможные варианты</p>
+        </div>
+      </div>
+      <p class="stage-last-text">Начинаем лечение только после того, как вы будете готовы! </p>
+    </div>
+  </section>
+
+    <section class="story py">
+      <h2>Почему выбирают Capital Dent?</h2>
+      <span class="section-tag"><i class="fas fa-star-of-life" style="font-size: 0.7rem; margin-right: 6px;"></i> Реальная история</span>
+      <div class="testimonial-card">
+          <blockquote>
+              <p>
+                  К нам как-то зашла женщина. Она приехала из другого города, нужно было приклеить коронку. 
+                  Перед нами она обошла все стоматологии вокруг. Никто ей не помог, сразу начинали грузить 
+                  попутными проблемами и навязывать услуги. У нас получилось добиться результата проще, быстрее 
+                  и дешевле всех. Мы даже сделали фотографии для её врача из другого города. 
+                  Потом она привела к нам друга.
+              </p>
+              <cite>
+                  <i class="fas fa-user-check"></i> 
+                  Из личного приёма, Capital Dent Clinic
+              </cite>
+          </blockquote>
+      </div>
+  </section>
+
+  <!-- <section class="everyday-life py bg-light">
+    <div class="container">
+      <div class="everyday-life__inner">
+        <h2 class="everyday-life__title">Наши будни</h2>
+        <div class="everyday-life__gallery gallery">
+          <div class="gallery__pic pic">
+            <img class="gallery__img cover" src="assets/images/everyday-life-1.jpg" alt="">
+          </div>
+          <div class="gallery__pic pic">
+            <img class="gallery__img cover" src="assets/images/everyday-life-2.jpg" alt="">
+          </div>
+          <div class="gallery__pic pic">
+            <img class="gallery__img cover" src="assets/images/everyday-life-3.jpg" alt="">
+          </div>
+          <div class="gallery__pic pic">
+            <img class="gallery__img cover" src="assets/images/everyday-life-4.jpg" alt="">
+          </div>
+          <div class="gallery__pic pic">
+            <img class="gallery__img cover" src="assets/images/everyday-life-5.jpg" alt="">
+          </div>
+          <div class="gallery__pic pic">
+            <img class="gallery__img cover" src="assets/images/everyday-life-6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+    <!-- Форма обратной связи -->
+  <section class="section feedback" id="feedback">
+    <div class="container feedback__inner">
+      <div class="feedback__image">
+        <img src="img/feedback.jpg" alt="Администратор клиники">
+      </div>
+      <div class="feedback__form-wrap">
+        <h2 class="section__title">Остались вопросы?</h2>
+        <form class="form form--feedback" id="feedbackForm" method="post" action="#" novalidate>
+          <input type="text" name="name" placeholder="Имя*" required autocomplete="name">
+          <input type="email" name="email" placeholder="Email*" required autocomplete="email">
+          <input type="tel" name="phone" placeholder="Телефон" autocomplete="tel">
+          <textarea name="message" placeholder="Сообщение" rows="4"></textarea>
+          <input type="text" name="website" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn btn--success btn--lg">Отправить</button>
+        </form>
+        <div class="feedback__success" id="feedbackSuccess" hidden>
+          <p>✅ Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col footer__col--logo">
+        <a href="#" class="footer__logo">
+          <img src="img/Capital_Dent_logo.png" alt="" width="40" height="40">
+          <span>Capital Dent</span>
+        </a>
+        <div class="footer__company">
+          <p>ООО «Столичная Поликлиника № 1»</p>
+          <p>ИНН 7714338768</p>
+          <p>ОГРН: 1157746409215</p>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">Меню</h3>
+        <ul>
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#specialists">Специалисты</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">Информация</h3>
+        <ul>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__col--contacts">
+        <h3 class="footer__heading">Контакты</h3>
+        <p>г. Москва, ул. Дубнинская 34</p>
+        <p>Пн–Пт: 08:00–20:00 | Сб: 08:00–18:00</p>
+        <p><a href="tel:+79932278617">+7 (993) 227-86-17</a></p>
+        <div class="footer__social">
+          <a href="#" aria-label="ВКонтакте">VK</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Telegram">Telegram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">© 2023 Capital Dent. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+<div class="modal-overlay"></div>
+
+<div class="modal modal-callback" id="modal-callback">
+  <button class="modal__button-close">
+    <img class="modal__button-close-icon" src="assets/images/x.svg" alt="">
+  </button>
+  <h2 class="modal__title">Оставить заявку</h2>
+  <form class="modal-callback__form modal__form form" data-type="Заявка с сайта">
+    <div class="form__fields">
+      <div class="field">
+        <input class="field__inp" type="text" name="name" placeholder="Имя*" required>
+      </div>
+      <div class="field">
+        <input class="field__inp" type="email" name="email" placeholder="*Email*" required>
+      </div>
+      <div class="field">
+        <input class="field__inp" type="text" name="phone" placeholder="*Телефон*" required>
+      </div>
+      <div class="field">
+        <textarea class="field__txt" name="message" placeholder="Сообщение"></textarea>
+      </div>
+    </div>
+    <div class="g-recaptcha" data-sitekey="ВАШ_КЛЮЧ_САЙТА"></div>
+    <button class="form__btn btn" type="submit">Отправить</button>
+  </form>
+</div>
+
+<div class="modal modal-review" id="modal-review">
+  <button class="modal__button-close">
+    <img class="modal__button-close-icon" src="assets/images/x.svg" alt="">
+  </button>
+  <h2 class="modal__title">Оставить заявку</h2>
+  <form class="modal-review__form modal__form form" data-type="Отзыв">
+    <div class="form__fields">
+      <div class="field">
+        <input class="field__inp" type="text" name="name" placeholder="Имя*" required>
+      </div>
+      <div class="field">
+        <input class="field__inp" type="email" name="email" placeholder="*Email*" required>
+      </div>
+      <div class="field">
+        <input class="field__inp" type="text" name="phone" placeholder="*Телефон*" required>
+      </div>
+      <div class="field">
+        <textarea class="field__txt" name="message" placeholder="Отзыв"></textarea>
+      </div>
+    </div>
+    <button class="form__btn btn" type="submit">Отправить</button>
+  </form>
+</div>
+
+<div class="modal modal-complete" id="modal-complete">
+  <img class="modal-complete__icon" src="assets/images/check.svg" alt="">
+  <h3 class="modal-complete__title">Спасибо за заявку, скоро мы с вами свяжемся!</h3>
+</div>
+
+<div id='recaptcha' class="g-recaptcha" data-sitekey="6LeuYYgsAAAAAIqIWVikz-lgQGxyjFBUNHPX4lCR" data-callback="onSubmit"
+  data-size="invisible"></div>
+
+<script src="assets/js/libs/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
